@@ -201,7 +201,7 @@ nav{
 }
 
 .headline__img{
-    width: 13rem; height: 13rem;
+    width: 12rem; height: 12rem;
     background: url("../img/pessoas__estudando.jpg") no-repeat center/cover;
     border-radius: 50%;
     margin: 0 auto;
@@ -282,7 +282,6 @@ nav{
 
 .email__user{
     position: relative;
-    background: red;
     width: 18rem;
     margin: 0 auto;
     margin-bottom: .5rem;
@@ -338,7 +337,7 @@ footer span{
 }
 
 .obeservado{
-    transform: translateX(-17rem);
+    transform: translateX(-16rem);
     transition: 1s;
     opacity: 0;
 }

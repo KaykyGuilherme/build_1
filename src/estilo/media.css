@@ -1,0 +1,51 @@
+@media screen and (min-width: 800px) {
+    *{
+        transition: .2s;
+    }
+
+    .headline__text p{
+        font-size: 1.1rem;
+        width: 45rem;
+    }
+
+    .headline__img{
+        width: 20rem; height: 20rem;
+    }
+    
+    .headline__text__bottom{
+        display: flex;
+        align-items: center; justify-content: center;
+        gap: 1rem;
+    }
+
+    .headline__text__bottom span{
+        width: 22rem;
+    }
+
+    .headline__text__bottom span i{
+        font-size: 2.5rem;
+    }
+
+    .headline__text__bottom span p{
+        width: auto;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .headline{
+        display: flex;
+        gap: 5rem;
+        align-items: center; justify-content: center;
+    }
+
+    .headline__img{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .headline__img{
+        width: 25rem; height: 25rem;
+    }
+}

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor__1: #eee;
+    --cor__2: #A3DFC3;
+    --cor__3: #6AB982;
+    --cor__4: #5E875B;
+
+    --cor__escura1: black;
+    --cor__escira2: #111;
+
+    --index__principal: 99;
+    --index__segundario: 88;
+    --index__para_baixo: -1;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: #A3DFC3;
+    z-index: var(--index__principal);
+}
+
+nav{
+    padding: .5rem 2rem;
+    display: flex;
+    align-items: center; justify-content: space-between;
+    font-weight: 600;
+    text-shadow: 0 1px .1rem var(--cor__4);
+}
+
+.exit__menu__mobile, .barras__menu__mobile{
+    display: none;
+}
+
+.nav__logo{
+    font-size: 2rem;
+    color: var(--cor__1);
+    letter-spacing: .3rem;
+}
+
+.nav__list{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+.nav__list a{
+    text-decoration: none;
+    color: var(--cor__1);
+    font-size: 1.5rem;
+}
+
+.nav__register a{
+    text-shadow: none;
+    margin-left: 2rem;
+    background: var(--cor__1);
+    padding: .3rem 2rem;
+    border-radius: 1rem;
+    color: var(--cor__2);
+}
+
+@media screen and (max-width: 815px) {
+    .nav__mobile__active .nav__list{
+        height: 20rem;
+        padding: 1rem;
+    }
+
+    .barras__menu__mobile{
+        display: block;
+        font-size: 2.3rem;
+        color: var(--cor__1);
+        cursor: pointer;
+    }
+
+    .exit__menu__mobile{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1.9rem;
+        color: var(--cor__1);
+        font-size: 2rem;
+    }
+
+    .nav__list{
+        overflow: hidden;
+        position: absolute;
+        display: grid;
+        grid-template-columns: 100%;
+        top: 0;
+        left: 0;
+        height: 0;
+        padding: 0;
+        background: var(--cor__2);
+        width: 100%;
+        text-align: center;
+        transition: .2s;
+        box-shadow: 0 .2rem .6rem rgb(0 0 0 / .2);
+    }
+
+    .nav__register{
+        width: 100%;
+        padding: .3rem 0;
+        background: var(--cor__1);
+        border-radius: .5rem;
+    }
+    
+    .nav__register a{
+        padding: 0; margin: 0;
+        background: transparent;
+        border: none;
+        display: inline;
+    }
+    
+}
+
+.headline{ 
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: .7rem;
+    margin-bottom: 1em;
+}
+
+.headline__text{
+    padding-top: 3rem;
+    display: grid;
+    align-items: center; justify-content: center;
+}
+
+.headline__text .avisos{
+    display: flex;
+    align-items: center; justify-content: start;
+    gap: .5rem;
+}
+
+.headline__text .avisos i{
+    color:var(--cor__3);
+}
+
+.headline__text .avisos p{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.headline__text h1{
+    font-size: 2rem;
+}
+
+.headline__text p{
+    text-align: justify;
+    font-weight: 400;
+    margin: 1rem 0;
+    width: 21rem;
+}
+
+.headline__text__bottom{
+    display: grid;
+    align-items: center; justify-content: center;
+}
+
+.headline__text__bottom a, .email button{
+    border: none;
+    background: var(--cor__3);
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor__1);
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 17rem;
+    margin: 0 auto;
+}
+
+.headline__text__bottom span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+}
+
+.headline__text__bottom span i{
+    color: var(--cor__3);
+    font-size: 2rem;
+}
+
+.headline__text__bottom span p{
+    font-size: .9rem;
+    width: 16rem;
+}
+
+.headline__img{
+    width: 14rem; height: 14rem;
+    background: url("../img/pessoas__estudando.jpg") no-repeat center/cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.cards{
+    background: var(--cor__4);
+    padding: .7rem;
+}
+
+.container__cards{
+    display: flex;
+    flex-flow: wrap;
+    align-content: center; justify-content: center;
+    gap: .7rem;
+}
+
+.card{
+    background: var(--cor__1);
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem rgb(0 0 0 / .3);
+    max-width: 400px;
+}
+
+.card i{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.card h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.card p{
+    text-align: center;
+}
+
+.email{
+    display: grid;
+    align-items: center; justify-content: center;
+    padding: 1rem;
+    background: var(--cor__1);
+    text-align: center;
+}
+
+.email span{
+    width: 100%;
+    display: flex;
+    align-items: center; justify-content: center;
+    gap: .5rem;
+}
+
+.email span i{
+    color: var(--cor__4);
+}
+
+.email span p{
+    text-align: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.email h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.email > p{
+    margin: .3rem auto;
+    max-width: 34rem;
+    font-size: .9rem;
+}
+
+.email__user{
+    position: relative;
+    background: red;
+    width: 18rem;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
+
+.email__user p{
+    top: 50%;
+    left: 47%;
+    color: var(--cor__4);
+    font-weight: 600;
+    text-transform: ca;
+    width: 17rem;
+    transform: translate(-50%, -50%);
+    font-size: .8rem;
+    position: absolute;
+}
+
+
+.email__user input{
+    width: 100%;
+    padding: .5rem;
+}
+
+.email button{
+    width: 18rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    background: var(--cor__escira2);
+    color: var(--cor__1);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    text-transform: capitalize;
+}
+
+footer a{
+    color: var(--cor__1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer span{
+    letter-spacing: .3rem;
+    color: var(--cor__4);
+    font-weight: 600;
+    position: absolute;
+    top: .2rem;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 2rem;
+}
+
+.obeservado{
+    transform: translateX(-18rem);
+    transition: 1s;
+    opacity: 0;
+}
+
+.olhando{
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.container__cards .card:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.container__cards .card:nth-child(3){
+    transition-delay: 700ms;
+}
